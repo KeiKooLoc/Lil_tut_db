@@ -33,7 +33,7 @@ def put__user_in_db():
         # add to db
         session.commit()
 
-        # print all records in User table
+        # print all records from User table
         print('All RECORDS')
         for user in session.query(db.User).all():
             print(f'-' * 50 +
